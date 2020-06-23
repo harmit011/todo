@@ -26,9 +26,7 @@ export class AppComponent {
   //title = 'todo-ang';
   todoArray=[];
   todo;
-  //todoForm = new FormGroup({
-  //  ngForm: new FormControl(''),
-  //});
+ // todoForm = new FormGroup()
   addTodo(value)
   {
     if(value!=="")
