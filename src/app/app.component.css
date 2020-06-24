@@ -1,6 +1,8 @@
 /*Google fonts*/
 @import url('https://fonts.googleapis.com/css?family=Raleway');
 body{ padding: 0; margin: 0;}
+h1{    font-family: "Raleway";    color:#0042f9; }
+h2{    font-family: "Raleway";    color:#d4f900; }
 form{ max-width: 30em; margin: 4em auto; position: relative; background: #f4f4f4; padding: 2em 3em;}
 form h1{    font-family: "Raleway";    color:#F97300; }
 form input[type=text]::placeholder{   font-family: "Raleway";   color:#666; }

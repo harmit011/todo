@@ -1,5 +1,6 @@
 import { Component } from '@angular/core';
 import { trigger, animate, style, transition, keyframes} from '@angular/animations';
+import { FormGroup } from '@angular/forms';
 
 
 
@@ -8,7 +9,7 @@ import { trigger, animate, style, transition, keyframes} from '@angular/animatio
   templateUrl: './app.component.html',  
   styleUrls: ['./app.component.css'],  
   animations:[ 
-    trigger("moveInLeft",[
+    trigger("moveinleft",[
        transition("void=> *",[style({transform:"translateX(300px)"}),
         animate(200,keyframes([
           style({transform:"translateX(300px)"}),
@@ -26,7 +27,7 @@ export class AppComponent {
   //title = 'todo-ang';
   todoArray=[];
   todo;
- // todoForm = new FormGroup()
+  todoForm = new FormGroup({})
   addTodo(value)
   {
     if(value!=="")
@@ -54,7 +55,7 @@ export class AppComponent {
   { console.log(value) ;
     if(value!=="")
       { this.todoArray.push(value.todo);
-        //this.todoForm.reset()   
+        this.todoForm.reset()   
       }
     else
     { 
